@@ -1,0 +1,105 @@
+.App {
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 285px 285px 285px; 
+  /*grid-template-rows: 142px 142px 142px 142px;*/
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.container > div {
+  border: 1px solid black;
+}
+
+/* #img-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+ } */
+
+ #img-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+ }
+
+ h1 {
+  display: flex;
+  justify-content: center;
+ }
+
+ .footer {
+  text-align: center;
+  background-color: #eeeeee;
+  color: grey;
+}
+.instruction-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center;
+  align-items: center; /* Center horizontally and vertically */
+  max-width: 400px;
+  margin: 0 auto; /* Center horizontally within the container */
+}
+
+.clickable-heading {
+  cursor: pointer;
+  color: blue; /* Change color as needed */
+  text-decoration: underline; /* Add underline to mimic a link */
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+.directions {
+  text-align: left;
+}
+
+.add-margin {
+  margin-bottom: 16px;
+}
+
+/* Media query for smaller screens (e.g., phone screens) */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: repeat(2, 0.6fr); /* To make all containers the same size */
+    grid-template-rows: repeat(6, 0.6fr);
+    max-width: 600px;
+    /*grid-template-rows: 75px 75px 75px 75px 75px 75px;*/ /* To make all containers the same size */ 
+    column-gap: 5px;
+    row-gap: 5px;
+  }
+
+  /* Set fixed size for each grid item within the container */
+  .container > div {
+    width: 100%; /* Adjust this value as needed for the width */
+    height: 100%; /* Adjust this value as needed for the height */
+  }
+}
+
+@media (max-width: 400px) {
+  .instruction-container {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 290px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+    h2 {
+      font-size: 1.0rem;
+    }
+}
+
+

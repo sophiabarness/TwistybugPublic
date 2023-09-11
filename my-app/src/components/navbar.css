@@ -1,0 +1,142 @@
+/* src/components/styles.css */
+
+/* Basic styles for the navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    color: #278227ff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  }
+  
+  .navbar-brand {
+    font-size: 55px;
+    font-weight: 600;
+    margin-left: 200px;
+  }
+
+  .navbar img {
+    width: 100px;
+    height: 150px;
+  }
+  
+  /* Styles for the hamburger menu */
+  .navbar-toggle {
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+  }
+  
+  .toggle-icon {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: all 0.3s ease; /* Add a smooth transition for the icon */
+  }
+  
+  /* Styles for the menu items */
+  .navbar-menu {
+    display: flex;
+  }
+  
+  .navbar-menu a {
+    color: #278227ff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease; /* Add a smooth transition for menu items */
+  }
+  
+  @media (max-width: 1250px) {
+    .navbar-brand {
+      margin-left: 100px;
+    }
+  }
+
+  @media (max-width: 950px) {
+    .navbar-brand {
+      margin-left: 0px;
+    }
+  }
+
+  @media (max-width: 750px) {
+    .navbar-brand {
+      font-size: 40px;
+    }
+  }
+
+
+  /* Media query for the hamburger menu */
+  @media (max-width: 650px) {
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    }
+  
+    .navbar-brand {
+      font-size: 40px;
+    }
+    .navbar-menu.open {
+      display: flex;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  
+    /* Styling for active menu item */
+    .navbar-menu a:hover {
+      background-color: #444;
+    }
+  }
+
+  @media (max-width: 580px) {
+    .navbar-brand {
+      font-size: 30px;
+    }
+    .navbar img {
+      width: 80px;
+      height: 120px;
+    }
+
+  }
+
+  @media (max-width: 460px) {
+    .navbar-brand {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 290px) {
+    .navbar img {
+      width: 60px;
+      height: 90px;
+    }
+    .navbar-brand {
+      font-size: 18px;
+    }
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+  

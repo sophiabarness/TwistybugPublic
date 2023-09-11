@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=DM Sans:wght@200;300;400;500;600;700;800&display=swap');
+@font-face {
+  font-family: 'TTNorms'; /* Choose a name for your font */
+  src: url('tt-norms-pro-cufonfonts/TT\ Norms\ Pro\ ExtraBold.otf') format('truetype'); /* Adjust the path to your font file */
+  /* You can include more src lines for different font formats */
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTNorms'; /* Choose a name for your font */
+  src: url('tt-norms-pro-cufonfonts/TT\ Norms\ Pro\ Bold.otf') format('truetype'); /* Adjust the path to your font file */
+  /* You can include more src lines for different font formats */
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --font-family: 'TTNorms', 'Manrope', sans-serif;
+  --color-text: #8cc297;
+}
+
+body {
+  margin: 0;
+  font-family:  'TTNorms', 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  color: black;
+  outline: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+

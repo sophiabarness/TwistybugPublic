@@ -1,0 +1,10 @@
+POST http://localhost:3000/record/add-email/
+Content-Type: application/json
+
+{
+    "email": "sbarnes1@stanford.edu"
+}
+
+###
+
+GET http://localhost:3000/record/

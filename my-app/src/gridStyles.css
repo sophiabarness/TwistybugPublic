@@ -1,0 +1,39 @@
+/* gridStyles.css */
+
+/* Default style for images */
+.item img {
+    width: 100%; 
+    height: 100%;
+}
+
+.item {
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    transition: border 0.1s;
+} 
+
+.item.clicked {
+    border: 5px solid #278227ff;
+    
+}
+
+/* .item:hover {
+    background-color: #b1d9b1ff;
+} */
+
+/* .item:focus,
+.item:active,
+.item:hover {
+  border-color: blue; 
+
+} */
+  
+/* @media (max-width: 900px) {
+.item button {
+    width: 100%;
+    height: 100%
+}
+} */
+
